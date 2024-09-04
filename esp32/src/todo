@@ -1,0 +1,20 @@
+1. Setup postgres on local
+2. Update postgres connection string/ creds in server.js line 9
+3. Run table migration 
+    CREATE TABLE magfield_data (
+    id SERIAL PRIMARY KEY,
+    time TIMESTAMP NOT NULL,
+    value INTEGER NOT NULL
+    );
+
+    CREATE TABLE interference_data (
+        id SERIAL PRIMARY KEY,
+        time TIMESTAMP NOT NULL,
+        value INTEGER NOT NULL
+    );
+
+Test the above using Postman - https://www.postman.com/
+
+4. From ESP then upload sample data 
+
+GPT link https://chatgpt.com/share/ab130f01-c9d1-491d-bd6d-8f06a0f5d764
